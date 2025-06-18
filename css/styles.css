@@ -793,7 +793,7 @@ address {
   fill: currentColor;
 }
 
-/* Foorm */
+/* ---------------------------------Form----------------------------------- */
 form {
   width: 448px;
   margin-left: 40px;
@@ -830,6 +830,7 @@ form {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .form-input:focus,
@@ -888,6 +889,7 @@ textarea {
   border-radius: 4px;
   resize: none;
   color: var(--secondary-text-color);
+  cursor: pointer;
 }
 
 .form-checkbox {
