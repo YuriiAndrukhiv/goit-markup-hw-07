@@ -1,0 +1,29 @@
+/*----------------------HEADER--------------------------*/ 
+header {
+    border-bottom: 1px solid #ececec;
+
+/* Header-nav */
+    .header-nav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* Header logo */
+.logo {
+    text-decoration: none;
+
+    .first-word-logo, .second-word-logo {
+            font-family: $second-family;
+            font-weight: 700;
+            font-size: 26px;
+            color: $accent-color;
+        
+        }
+    
+    .second-word-logo {
+            color: $additional-black-color;
+        }
+}
+
