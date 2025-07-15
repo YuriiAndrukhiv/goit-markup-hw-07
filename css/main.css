@@ -845,7 +845,6 @@ textarea:focus {
   letter-spacing: 0.01em;
   color: #757575;
 }
-
 .form-input:not(:-moz-placeholder-shown) + .form-label {
   color: #2196f3;
   border-color: #2196f3;
@@ -853,7 +852,6 @@ textarea:focus {
   -moz-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-input:not(:-ms-input-placeholder) + .form-label {
   color: #2196f3;
   border-color: #2196f3;
@@ -861,9 +859,7 @@ textarea:focus {
   -ms-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
+.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label {
   color: #2196f3;
   border-color: #2196f3;
   -webkit-transform: translate(-23px, -40px);
@@ -886,7 +882,6 @@ textarea:focus {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
 }
-
 .form-input:focus ~ .form-icon {
   color: #2196f3;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -939,7 +934,6 @@ textarea {
   border: 2px solid #212121;
   border-radius: 2px;
 }
-
 .checkbox:checked + .icon-check {
   background-color: #2196f3;
   border-color: #2196f3;

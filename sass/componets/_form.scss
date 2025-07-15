@@ -55,14 +55,14 @@ textarea:focus {
   font-size: 14px;
   letter-spacing: 0.01em;
   color: $secondary-text-color;
-}
 
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
-  color: $accent-color;
-  border-color: $accent-color;
-  transform: translate(-23px, -40px);
-  transition: transform $time-delay $time-fuction;
+  .form-input:focus + &,
+  .form-input:not(:placeholder-shown) + & {
+    color: $accent-color;
+    border-color: $accent-color;
+    transform: translate(-23px, -40px);
+    transition: transform $time-delay $time-fuction;
+  }
 }
 
 .form-icon {
@@ -73,11 +73,11 @@ textarea:focus {
   transition: transform $time-delay $time-fuction;
 
   fill: currentColor;
-}
 
-.form-input:focus ~ .form-icon {
-  color: $accent-color;
-  transition: color $time-delay $time-fuction;
+  .form-input:focus ~ & {
+    color: $accent-color;
+    transition: color $time-delay $time-fuction;
+  }
 }
 
 textarea {
@@ -123,15 +123,15 @@ textarea {
 
   border: 2px solid $primary-text-color;
   border-radius: 2px;
-}
 
-.checkbox:checked + .icon-check {
-  background-color: $accent-color;
-  border-color: $accent-color;
-  background-origin: border-box;
+  .checkbox:checked + & {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    background-origin: border-box;
 
-  transition: background-color $time-delay $time-fuction,
-    border-color $time-delay $time-fuction;
+    transition: background-color $time-delay $time-fuction,
+      border-color $time-delay $time-fuction;
+  }
 }
 
 .checkbox-link {
