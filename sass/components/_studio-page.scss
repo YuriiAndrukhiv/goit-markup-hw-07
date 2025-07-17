@@ -39,18 +39,11 @@
 }
 
 .hero-button {
-  min-width: 200px;
+  @extend %buttons;
+
   padding: 10px 32px;
   margin-bottom: 200px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  color: $white-color;
-  background: $accent-color;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border: none;
 }
@@ -79,6 +72,10 @@
 .feature-item {
   width: 270px;
   height: 251px;
+
+  & + & {
+    margin-left: 30px;
+  }
 }
 
 .background {
@@ -87,10 +84,6 @@
   margin-bottom: 10px;
 
   background-color: $background-color;
-}
-
-.feature-item + .feature-item {
-  margin-left: 30px;
 }
 
 .feature-title {
@@ -123,10 +116,10 @@
 
 .work-item {
   position: relative;
-}
 
-.work-item + .work-item {
-  margin-left: 45px;
+  & + & {
+    margin-left: 45px;
+  }
 }
 
 .work-image {
@@ -175,10 +168,10 @@
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
   background-color: $white-color;
-}
 
-.team-unit + .team-unit {
-  margin-left: 40px;
+  & + & {
+    margin-left: 40px;
+  }
 }
 
 .team-image {

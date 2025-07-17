@@ -9,25 +9,20 @@ header {
   }
 }
 
-/* Header logo */
-.logo {
-  text-decoration: none;
+// /* Header logo */
+// .logo {
+//   text-decoration: none;
+// }
 
-  .first-word-logo,
-  .second-word-logo {
-    font-family: $second-family;
-    font-weight: 700;
-    font-size: 26px;
-    color: $accent-color;
-  }
+// .first-word-logo {
+//   @include logo($accent-color);
+// }
 
-  .second-word-logo {
-    color: $additional-black-color;
-  }
-}
+// .second-word-logo {
+//   @include logo($additional-black-color);
+// }
 
 /* Site-nav  */
-
 .site-nav {
   display: flex;
   margin-left: 86px;
@@ -41,30 +36,18 @@ header {
   }
 }
 
-
-.nav-link,
-.contacts-link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  transition: color $time-delay $time-fuction;
-
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
+.nav-link {
+  @extend %header-links;
   color: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: $accent-color;
-}
-
-/* Header-contacts */
-.header-contacts {
+/* Contacts-nav */
+.contacts-nav {
   display: flex;
   margin-left: auto;
 
@@ -77,6 +60,7 @@ header {
 }
 
 .contacts-link {
+  @extend %header-links;
   color: $secondary-text-color;
 
   &:hover,

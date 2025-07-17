@@ -52,34 +52,28 @@
   height: 404px;
   margin-right: 45px;
   margin-bottom: 45px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(n + 7) {
+    margin-bottom: 0;
+  }
 }
 
-.portfolio-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio-item:nth-child(n + 7) {
-  margin-bottom: 0;
-}
-
-.portfolio-item:hover .portfolio-overlay,
-.portfolio-item:focus .portfolio-overlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.portfolio-list .portfolio-link {
+.portfolio-link {
   display: block;
   text-decoration: none;
   color: inherit;
 
   transition: box-shadow $time-delay $time-fuction;
-}
 
-.portfolio-list .portfolio-link:hover,
-.portfolio-list .portfolio-link:focus {
-  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
-    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
+      0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
 }
 
 .top-card {
@@ -111,6 +105,12 @@
   line-height: 28px;
   color: $white-color;
   background: rgba(33, 150, 243, 0.9);
+
+  .portfolio-item:hover &,
+  .portfolio-item:focus & {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .bottom-card {
